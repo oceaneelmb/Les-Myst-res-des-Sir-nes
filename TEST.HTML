@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Mystères des Sirènes</title>
+    <style>
+        /* Importation d'une police élégante */
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400&display=swap');
+
+        /* Styles de base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            font-family: 'Raleway', sans-serif;
+            color: #333;
+        }
+
+        /* Palette de couleurs */
+        :root {
+            --rose: #EF94CA;
+            --lilac: #D0C3F1;
+            --blue-light: #3F4F35;
+            --blue-medium: #6EA899;
+            --blue-dark: #207373;
+            --blue : #264F4E;
+        }
+
+        /* Styles pour la page d'accueil */
+        header {
+            background-image: url('file:///C:/Users/ocean/Documents/Universit%C3%A9/Semestre%205/Outils%20num%C3%A9riques/Sir%C3%A8nes/sirene-irlandaise-1024x500.webp'); /* Image de fond */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+        /* Superposition d'un filtre sombre sur l'image de fond */
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+            z-index: 1;
+        }
+
+        /* Conteneur du contenu de la page d'accueil */
+        .content {
+            z-index: 2;
+            max-width: 800px;
+            padding: 20px;
+        }
+
+        /* Style du titre */
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 4em;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Style du texte d'introduction */
+        p {
+            font-size: 0.9em;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        /* Style du bouton */
+        .btn {
+            display: inline-block;
+            padding: 15px 40px;
+            font-size: 1em;
+            color: white;
+            background-color: var(--blue-dark);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+            font-weight: bold; /* Texte en gras */
+        }
+
+        .btn:hover {
+            background-color: var(--blue-medium);
+        }
+
+        /* Animation de survol élégante pour le bouton */
+        .btn::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: white;
+            transition: width 0.3s;
+        }
+
+        .btn:hover::after {
+            width: 100%;
+        }
+
+        /* Menu de navigation */
+        nav {
+            background-color: #207373;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-align: center;
+            padding: 8px 12px;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #6EA899;
+            color: white;
+        }
+
+        /* Styles responsives */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 3em;
+            }
+
+            p {
+                font-size: 1.2em;
+            }
+
+            .btn {
+                font-size: 1em;
+                padding: 12px 30px;
+            }
+
+            nav a {
+                padding: 10px 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+<!-- Menu de navigation -->
+<nav>
+    <a href="#section-essence">Origines et Caractéristiques</a> <!-- Modification ici -->
+    <a href="#section-mythesetlégendes">Mythes et Légendes</a>
+    <a href="#section-artcinémamusique">Art, Cinéma et Musique</a>
+    <a href="#section-lieuxmusées">Lieux à visiter et Musées</a>
+</nav>
+
+    <!-- En-tête avec image de fond et texte d'introduction -->
+    <header>
+        <div class="content">
+            <h1>Les Mystères des Sirènes</h1>
+            <p>
+                Explorez l'univers envoûtant des sirènes, ces créatures mythiques mi-femme, mi-poisson qui ont captivé l'imaginaire des marins et des cultures à travers le monde. Découvrez leurs origines, leur rôle dans les légendes, et comment elles continuent d'inspirer l'art et la culture d'aujourd'hui.
+            </p>
+            <a href="#section-essence" class="btn">Plongez dans le mystère !</a>
+        </div>
+    </header>
+
+
+
+
+    <!-- Section II. : L'Essence des Sirènes -->
+    <section id="section-essence" style="background-color: var(white); padding: 50px 20px;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto;">
+
+            <!-- Sous-section A : Origines des Sirènes -->
+            <div class="section-part" style="margin-bottom: 50px;">
+                <h2 style="color: var(--blue); font-family: 'Playfair Display', serif; font-size: 2.8em; text-align: center;">L’Essence des Sirènes</h2>
+                <h3 style="color: var(--blue-dark); font-family: 'Playfair Display', serif; font-size: 2em; margin-top: 40px;">A. Origines des Sirènes</h3>
+
+                <p style="font-size: 1.1em; color: var(black); line-height: 1.6;">
+                    Les sirènes occupent une place fascinante dans les mythologies de nombreuses civilisations, chacune leur attribuant des caractéristiques uniques qui reflètent les croyances et les valeurs culturelles de leur époque.
+                </p>
+
+                <h4 style="color: var(--lilac); font-family: 'Raleway', sans-serif; font-size: 1.5em; margin-top: 20px;">Les sirènes dans la mythologie grecque :</h4>
+                <p style="font-size: 1.1em; color: var(black); line-height: 1.6;">
+                    Dans la mythologie grecque, les sirènes sont décrites comme de mystérieuses créatures marines, mi-femmes, mi-poissons, dotées de voix envoûtantes. Leur chant irrésistible attire les marins vers des récifs traîtres, les menant à leur perte.
+                </p>
+                <!-- Espace pour une image ici -->
+                <img src="https://www.meisterdrucke.fr/kunstwerke/1260px/-%20English%20School%20-%20Ulysses%20and%20the%20Sirens%20%20-%20%28MeisterDrucke-659108%29.jpg" alt="Les sirènes dans la mythologie grecque" style="width:40%; height:auto; display:block; margin: 0 auto 20px auto;border: 5px solid var(--blue);">                
+                </div>
+
+                <h4 style="color: var(--lilac); font-family: 'Raleway', sans-serif; font-size: 1.5em; margin-top: 20px;">Les sirènes dans les légendes européennes :</h4>
+                <p style="font-size: 1.1em; color: var (black); line-height: 1.6;">
+                    Au cours de l'époque médiévale en Europe, les sirènes subissent une transformation symbolique. Elles sont souvent représentées comme des êtres dangereux, des incarnations de la tentation et de la séduction mortelle. Dans ces légendes, elles deviennent des avertissements contre les dangers du désir et de l'abandon, renforçant leur réputation d'être perfides qui attirent les marins vers la mort.
+                </p>
+                <!-- Espace pour une image ici -->
+                <img src="https://cdn.essentiels.bnf.fr/media/images/cache/crop/rc/hhadVKom/uploads/media/image/20201205203639000000_mer_162.jpg" alt="Les sirènes dans les légendes européennes" style="width:40%; height:auto; display:block; margin: 0 auto 20px auto;border: 5px solid var(--blue);">                
+
+                </div>
+
+                <h4 style="color: var(--lilac); font-family: 'Raleway', sans-serif; font-size: 1.5em; margin-top: 20px;">Les variations culturelles :</h4>
+                <p style="font-size: 1.1em; color: var(black); line-height: 1.6;">
+                    Dans certaines traditions japonaises, les « Ningyo » sont perçues comme des créatures bénéfiques, apportant chance et prospérité à ceux qui les rencontrent. Cette vision contrastée montre que les sirènes peuvent aussi symboliser la beauté et la sérénité dans certaines cultures. Dans d'autres régions, comme en Afrique ou dans les récits celtiques, elles revêtent également des caractéristiques variées, allant de protectrices à entités plus ambiguës.
+                </p>
+                <!-- Espace pour une image ici -->
+                <img src="https://japanization.org/wp-content/uploads/2021/07/sirene-Yaohime-1.jpg" alt="Les variations culturelles" style="width:40%; height:auto; display:block; margin: 0 auto 20px auto;border: 5px solid var(--blue);">                
+                </div>
+
+                <p style="font-size: 1.1em; color: var(black); line-height: 1.6;">
+                    En somme, les origines des sirènes témoignent d'une riche tapisserie de récits et de symboles, façonnés par le temps et les cultures. Ces variations révèlent non seulement leur attrait persistant, mais aussi leur capacité à incarner des thèmes universels de séduction, de danger et de dualité.
+                </p>
+            </div>
+
+            <!-- Sous-section B : Les caractéristiques des Sirènes -->
+            <div class="section-part" style="margin-bottom: 50px;">
+                <h3 style="color: var(--blue-dark); font-family: 'Playfair Display', serif; font-size: 2em; margin-top: 40px;">B. Les caractéristiques des Sirènes</h3>
+
+                <p style="font-size: 1.1em; color: var(black); line-height: 1.6;">
+                    Mi-femmes, mi-poissons, les sirènes sont souvent représentées comme des entités à la fois fascinantes et redoutables. Même si leurs représentations varient selon les cultures et les époques, plusieurs caractéristiques communes se dégagent.
+                </p>
+
+                <h4 style="color: var(--lilac); font-family: 'Raleway', sans-serif; font-size: 1.5em; margin-top: 20px;">L'apparence physique des sirènes :</h4>
+                <p style="font-size: 1.1em; color: var(black); line-height: 1.6;">
+                    Les sirènes sont généralement décrites comme de magnifiques femmes à la chevelure longue et soyeuse, souvent ornées de perles ou de coquillages. Leur beauté envoûtante, couplée à leur queue de poisson étincelante, leur confère une allure hypnotisante. Dans certaines légendes, elles sont également dotées d'ailes d'oiseaux, ajoutant une dimension majestueuse supplémentaire à leur apparence.
+                </p>
+                <!-- Espace pour une image ici -->
+                <img src="https://spiritu-art-litte.fr/wp-content/uploads/2023/11/sirene.jpg" alt="Apparence physique" style="width:40%; height:auto; display:block; margin: 0 auto 20px auto;border: 5px solid var(--blue);">                
+                </div>
+
+                <h4 style="color: var(--lilac); font-family: 'Raleway', sans-serif; font-size: 1.5em; margin-top: 20px;">Les pouvoirs magiques des sirènes :</h4>
+                <p style="font-size: 1.1em; color: var(black); line-height: 1.6;">
+                    Leur chant mélodieux a la capacité d’envoûter et de charmer, attirant ainsi les marins vers leur destin fatal, en les faisant s’échouer sur des rochers ou les engloutir dans les profondeurs marines. Cette capacité à manipuler les émotions des êtres humains en fait des symboles puissants de la tentation. Dans de nombreux récits, leur chant est décrit comme une mélodie capable de faire oublier la raison et d’inciter à des actions imprudentes.
+                </p>
+                <!-- Espace pour une image ici -->
+                <img src="https://www.nccri.ie/grec/pic/sirenes_draper.jpg" alt="Les pouvoirs magiques des sirènes" style="width:40%; height:auto; display:block; margin: 0 auto 20px auto;border: 5px solid var(--blue);">                
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+<!-- Section III. : Mythes et Légendes -->
+<section id="section-mythesetlégendes" style="background-color: var(white); padding: 50px 20px;">
+    <div class="container" style="max-width: 1200px; margin: 0 auto;">
+
+        <!-- Sous-section A : Les Sirènes et Ulysse -->
+        <div class="section-part" style="margin-bottom: 50px;">
+            <h2 style="color: var(--blue); font-family: 'Playfair Display', serif; font-size: 2.8em; text-align: center;">Mythes et Légendes</h2>
+            <h3 style="color: var(--blue-dark); font-family: 'Playfair Display', serif; font-size: 2em; margin-top: 40px;">A. Les Sirènes et Ulysse</h3>
+
+            <p style="font-size: 1.1em; color: var(black); line-height: 1.6;margin: 0 auto 12px auto;">
+                Dans l'univers fascinant de la mythologie grecque, l'épisode des sirènes dans l'Odyssée d'Homère se distingue par son exploration des thèmes de la tentation et de la maîtrise de soi.
+            </p>
+            <p style="font-size: 1.1em; color: var(black); line-height: 1.6;margin: 0 auto 12px auto;">
+ Ulysse, roi d'Ithaque, se retrouve face à ces créatures marines redoutables, dont le chant envoûtant a le pouvoir d'attirer les marins vers une mort certaine. Averti par la magicienne Circé, il met en œuvre une stratégie astucieuse : ses hommes se bouchent les oreilles avec de la cire pour ne pas entendre le chant, tandis qu'il se fait attacher au mât de son navire pour résister à la tentation.
+           </p>
+           <p style="font-size: 1.1em; color: var(black); line-height: 1.6;margin: 0 auto 12px auto;">         
+Cet épisode emblématique met en lumière non seulement les dangers de l'irrépressible désir, mais aussi l'importance cruciale de la raison et de la prudence dans notre quête de connaissance et d'expérience.
+            </p>
+            <!-- Espace pour une image ici -->
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/WATERHOUSE_-_Ulises_y_las_Sirenas_%28National_Gallery_of_Victoria%2C_Melbourne%2C_1891._%C3%93leo_sobre_lienzo%2C_100.6_x_202_cm%29.jpg/1200px-WATERHOUSE_-_Ulises_y_las_Sirenas_%28National_Gallery_of_Victoria%2C_Melbourne%2C_1891._%C3%93leo_sobre_lienzo%2C_100.6_x_202_cm%29.jpg" alt="Les Sirènes et Ulysse" style="width:40%; height:auto; display:block; margin: 0 auto 20px auto;border: 5px solid var(--blue);">                
+        </div>
+
+        <!-- Sous-section B : Les Sirènes et les marins du Moyen Âge -->
+        <div class="section-part" style="margin-bottom: 50px;">
+            <h3 style="color: var(--blue-dark); font-family: 'Playfair Display', serif; font-size: 2em; margin-top: 40px;">B. Les Sirènes et les marins du Moyen Âge</h3>
+
+                <p style="font-size: 1.1em; color: var(black); line-height: 1.6;">
+                  Au Moyen Âge, les sirènes deviennent des symboles emblématiques dans l'imaginaire des marins, représentant à la fois le danger et la séduction. Dépeintes comme de magnifiques femmes au chant envoûtant, elles attirent les marins vers leur perte. Les légendes circulant parmi les navigateurs racontent des histoires tragiques de navires perdus, illustrant les peurs et croyances face à l'immensité de l'océan.
+                </p>
+            <!-- Espace pour une image ici -->
+            <img src="https://actuelmoyenage.wordpress.com/wp-content/uploads/2023/06/4-1.jpg?w=640" alt="Les Sirènes et les marins du Moyen Âge" style="width:40%; height:auto; display:block; margin: 0 auto 20px auto;border: 5px solid var(--blue);">                
+        </div>
+
+
+            <h4 style="color: var(--lilac); font-family: 'Raleway', sans-serif; font-size: 1.5em; margin-top: 20px;">Les témoignages des sirènes :</h4>
+            <p style="font-size: 1.1em; color: var(black); line-height: 1.6;margin: 0 auto 12px auto;">
+              Les récits des marins du Moyen Âge mettent en lumière le rôle central des sirènes dans la culture maritime. De nombreux témoignages, consignant des histoires de naufrages, évoquent comment des navigateurs étaient attirés par les chants envoûtants des sirènes, les entraînant vers des récifs mortels. Ces mélodies fascinantes hypnotisaient les marins, leur faisant perdre de vue leur cap et entraînant souvent des désastres.
+            </p>
+            <p style="font-size: 1.1em; color: var(black); line-height: 1.6;margin: 0 auto 12px auto;">
+              Les anciens marins mettaient en garde contre ces chants, signalant qu'ils étaient souvent suivis de tempêtes ou de courants trompeurs, soulignant l'importance de rester vigilant face aux dangers de la mer. Les sirènes sont devenues des symboles de beauté et de tentation, mais aussi de destruction, incarnant le conflit entre le désir et la raison. Ces récits ont influencé la culture maritime, apparaissant sur d'anciennes cartes marines aux côtés d'avertissements pour les navigateurs.
+            </p>
+           
+
+            <h4 style="color: var(--lilac); font-family: 'Raleway', sans-serif; font-size: 1.5em; margin-top: 20px;">Les cartes marines et les sirènes :</h4>
+            <p style="font-size: 1.1em; color: var(black); line-height: 1.6;">
+                Les sirènes apparaissent également sur les anciennes cartes marines, illustrant les régions inexplorées et renforçant le mystère qui les entoure. Ces représentations soulignent les croyances et les craintes des marins face aux dangers de l'océan. Ainsi, les sirènes incarnent le rapport complexe entre l'homme et la mer, mêlant fascination et terreur, séduction et péril.
+            </p>
+            <!-- Espace pour une image ici -->
+            <img src="https://cdn.essentiels.bnf.fr/media/images/cache/crop/rc/QFEy3W1A/uploads/media/image/20201207051649000000_mer_711.jpg" alt="Les Sirènes et les marins du Moyen Âge" style="width:40%; height:auto; display:block; margin: 0 auto 20px auto;border: 5px solid var(--blue);">                
+        </div>
+
+
+
+        <!-- Sous-section C : Les Sirènes dans les contes de fées -->
+        <div class="section-part" style="margin-bottom: 50px;">
+            <h3 style="color: var(--blue-dark); font-family: 'Playfair Display', serif; font-size: 2em; margin-top: 40px;">C. Les Sirènes dans les contes de fées</h3>
+
+            <p style="font-size: 1.1em; color: var(black); line-height: 1.6;">
+                Les sirènes ont longtemps été des figures fascinantes dans la littérature, et leur représentation a évolué au fil du temps, en particulier dans les contes de fées. Contrairement à leur image dangereuse dans la mythologie, ces récits plus récents tendent à présenter les sirènes sous un jour différent, souvent comme des personnages plus nuancés.
+
+
+            <h4 style="color: var(--lilac); font-family: 'Raleway', sans-serif; font-size: 1.5em; margin-top: 20px;">La Petite Sirène :</h4>
+            <p style="font-size: 1.1em; color: var(black); line-height: 1.6;">
+                L'un des contes les plus célèbres mettant en scène une sirène est « La Petite Sirène » de Hans Christian Andersen. Dans cette histoire, la sirène renonce à sa voix et à sa vie sous-marine pour vivre sur terre par amour d'un prince humain. Ce sacrifice, bien que tragique, met en lumière des thèmes universels tels que l'amour non partagé, le désir de transformation et le prix de la quête de l'acceptation. La petite sirène devient un symbole de sacrifice et de douleur, mais aussi de courage.
+            </p>
+
+
+            <!-- Espace pour une image ici -->
+            <img src="IMAGE" alt="La Petite Sirène" style="width:40%; height:auto; display:block; margin: 0 auto 20px auto;border: 5px solid var(--blue);">                
+
+
+            <h4 style="color: var(--lilac); font-family: 'Raleway', sans-serif; font-size: 1.5em; margin-top: 20px;">L'évolution de l'image des sirènes :</h4>
+            <p style="font-size: 1.1em; color: var(black); line-height: 1.6;">
+                Dans les contes de fées, les sirènes sont souvent représentées comme des figures sensibles et émouvantes, contrastant avec leur image originelle de tentatrices mortelles. Cette transformation de leur caractère reflète un changement culturel dans la perception des femmes et des thèmes de la séduction. Les sirènes commencent à incarner des idéaux de beauté, de passion et de quête d'identité, souvent en opposition aux dangers qu’elles représentent dans les récits anciens.
+            </p>
+
+            <!-- Espace pour une image ici -->
+            <img src="IMAGE" alt="Évolution de l'image des sirènes" style="width:40%; height:auto; display:block; margin: 0 auto 20px auto;border: 5px solid var(--blue);">                 
+        </div>
+
+    </div>
+</section>
+</body>
+</html>
